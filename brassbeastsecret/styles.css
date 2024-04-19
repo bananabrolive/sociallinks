@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css?family=Fasthand');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+width: 100%;
+min-height: 100vh;
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+background-image: url('sky.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.card {
+width: 400px;
+height: 500px;
+font-size: 1.75rem;
+color: #fff;
+text-shadow: 5px 5px 5px black;
+background-color: #e84393;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+transform-style: preserve-3d;
+transform: perspective(1000px);
+}
+
+.card h1, .card h2 {
+transform: translateZ(50px);
+}
+
+.center {
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title {
+    color: white;
+}
+
+.part {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;   
+}
